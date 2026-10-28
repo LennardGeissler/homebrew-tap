@@ -6,25 +6,25 @@ cask "blindbucket" do
     end
   end
 
-  version "1.5.1"
+  version "1.6.0"
 
   on_macos do
     on_arm do
-      sha256 "fe419f929dce5937d635b6ccc6a375552b750700ee85ec15c6ab9fba9668a6e1"
+      sha256 "07dc8fdd9968ee1c2650c9a84838a279c1649f4539c183b710d2da554807bd3a"
       url "https://github.com/LennardGeissler/blindbucket/releases/download/v#{version}/blindbucket_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "f9a39a4e637f09d7aae1544f0b8f0206368bf259575971b54ab4b81539590bd4"
+      sha256 "d9eacb9132eb1b28a7435739d9209e64db8e044fbbc6bc03847dd34d463f5f1c"
       url "https://github.com/LennardGeissler/blindbucket/releases/download/v#{version}/blindbucket_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "fc8fefcff77f081be392a5352a40a930372d5d2116f029c0e70d9574541e3359"
+      sha256 "8b9ecfc97ce6213643ec9ed1e13c846ddd3f421bd5f593da84d6aada0e784f54"
       url "https://github.com/LennardGeissler/blindbucket/releases/download/v#{version}/blindbucket_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "150f4818fe1c522d7d93c4818793b37f31d77682a6b9ccee8b5d3a5addf6814c"
+      sha256 "7fde641cc9085348dd3cea699b41a294df53218e3820b32e5cc7ba39941f80ad"
       url "https://github.com/LennardGeissler/blindbucket/releases/download/v#{version}/blindbucket_#{version}_linux_amd64.tar.gz"
     end
   end
@@ -39,8 +39,8 @@ cask "blindbucket" do
 
   binary "blindbucket"
   bash_completion "contrib/completions/blindbucket.bash"
-  fish_completion "contrib/completions/blindbucket.fish"
   zsh_completion "contrib/completions/_blindbucket"
+  fish_completion "contrib/completions/blindbucket.fish"
 
   # No zap stanza required
 
