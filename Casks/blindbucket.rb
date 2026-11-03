@@ -6,25 +6,25 @@ cask "blindbucket" do
     end
   end
 
-  version "1.7.0"
+  version "1.8.0"
 
   on_macos do
     on_arm do
-      sha256 "4cc40d4e7414a037bd3c127cdc07b148552bbe8676dbe1ebfa443892dfb67373"
+      sha256 "e706d984be7cbe971126395fa7591197bdbb6fe199940874f0fa06c76551db75"
       url "https://github.com/LennardGeissler/blindbucket/releases/download/v#{version}/blindbucket_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "2facb242837fa4d113c0e98cdc2c5a01b4e8776827181809fbd48c61cc55ba1e"
+      sha256 "2de52b92c614593fa95b0ccb499f305948762e3c36d9348b2afaec31e5806ca4"
       url "https://github.com/LennardGeissler/blindbucket/releases/download/v#{version}/blindbucket_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "70f964f37dd7f3723a511c2c86b47dbbaa15af251dbc339d922bfd42d73d5006"
+      sha256 "0914e621151f59da340053b936587a1d2b30696ffd7940278b7b3b3dce46a8ff"
       url "https://github.com/LennardGeissler/blindbucket/releases/download/v#{version}/blindbucket_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "97555bf444fc02878511fcbb9b3bb3f344ed980339a6bea49f5bbceab867a3dd"
+      sha256 "11bf9b4bdb7dfe6d5656430ffa0b4fd067a8b8bae0dfb6d60f5a153f90503195"
       url "https://github.com/LennardGeissler/blindbucket/releases/download/v#{version}/blindbucket_#{version}_linux_amd64.tar.gz"
     end
   end
