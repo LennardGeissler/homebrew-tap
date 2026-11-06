@@ -6,25 +6,25 @@ cask "blindbucket" do
     end
   end
 
-  version "1.8.0"
+  version "1.9.0"
 
   on_macos do
     on_arm do
-      sha256 "e706d984be7cbe971126395fa7591197bdbb6fe199940874f0fa06c76551db75"
+      sha256 "3ae85b8a651673151b64271628969203fff27f2fcddebe6978f2fda67e5ee888"
       url "https://github.com/LennardGeissler/blindbucket/releases/download/v#{version}/blindbucket_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "2de52b92c614593fa95b0ccb499f305948762e3c36d9348b2afaec31e5806ca4"
+      sha256 "8b05ebd38444db28d12bbd65546b9254f7d4df93e24c8856adb3920f004f7225"
       url "https://github.com/LennardGeissler/blindbucket/releases/download/v#{version}/blindbucket_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "0914e621151f59da340053b936587a1d2b30696ffd7940278b7b3b3dce46a8ff"
+      sha256 "601f30aac8927160d46dfb88abe747fef6bac0c9810a18fe6138ba14701f488d"
       url "https://github.com/LennardGeissler/blindbucket/releases/download/v#{version}/blindbucket_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "11bf9b4bdb7dfe6d5656430ffa0b4fd067a8b8bae0dfb6d60f5a153f90503195"
+      sha256 "1808d808e06e146e5b2c5ec743e0f1a4115920a9a6e61d36e90435f515786588"
       url "https://github.com/LennardGeissler/blindbucket/releases/download/v#{version}/blindbucket_#{version}_linux_amd64.tar.gz"
     end
   end
@@ -42,7 +42,7 @@ cask "blindbucket" do
   zsh_completion "contrib/completions/_blindbucket"
   fish_completion "contrib/completions/blindbucket.fish"
 
-  # No zap stanza required
+  zap :not_required
 
   caveats <<~EOS
     blindbucket is not notarised by Apple; this cask removes macOS's quarantine
